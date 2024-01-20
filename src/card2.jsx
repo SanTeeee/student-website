@@ -13,7 +13,7 @@ function Card2(){
                 avatar={Image1}
                 paragraph="Welcome"
                 rating={Star}
-                h4="2,769 online courses"
+                h3="2,769 online courses"
                 desc="We focus on ergonomics and meeting 
                 you where you work. It's only a 
                 keystroke away."
@@ -22,7 +22,7 @@ function Card2(){
                 avatar={Image2}
                 paragraph="Welcome"
                 rating={Star}
-                h4="2,769 online courses"
+                h3="2,769 online courses"
                 desc="We focus on ergonomics and meeting 
                 you where you work. It's only a 
                 keystroke away."

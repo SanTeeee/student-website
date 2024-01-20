@@ -15,27 +15,28 @@ function Card2Info(props){
                 </div>
                 <span>
                     <p>{props.paragraph}</p>
-                    <div>
-                    <img src={props.rating}/> 
-                    <p>4.9</p>
+                    <div className="starAndRate">
+                        <img src={props.rating}/> 
+                        <p>4.9</p>
                     </div>
                     
                 </span>
-                <h4>{props.h4}</h4>
-                <p>{props.desc}</p>
-                <div>
-                    <i class="fa-solid fa-download"></i>
-                    <p>15 Sales</p>
-
+                <div className="padWrap">
+                    <h3>{props.h3}</h3>
+                    <p>{props.desc}</p>
+                    <div>
+                        <i class="fa-solid fa-download"></i>
+                        <p>15 Sales</p>
+                    </div>
+                    <div className="money">
+                        <p>$16.48</p>
+                        <p>$6.48</p>
+                    </div>
+                    <a href="#">
+                        Learn More&nbsp;
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
                 </div>
-                <div className="money">
-                    <p>$16.48</p>
-                    <p>$6.48</p>
-                </div>
-                <a href="#">
-                    Learn More
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                </a>
 
             </div>
         </div>
