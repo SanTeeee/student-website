@@ -2,6 +2,8 @@ import React from "react";
 import frame from "./Frame.png";
 import xmlid from "./XMLID_307_.png"
 import CardInfo from "./cardInfo"
+
+
 function Card(){
     return(
         <div className="cardInfoWrapper">
