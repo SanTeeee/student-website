@@ -17,7 +17,7 @@ header{
     display: flex;
     width: 100vw;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 40px 50px;
     height: auto;
     align-items: center;
     color: #fff;
@@ -323,14 +323,15 @@ a{
 .girlImage{
     background-image: url(./assets/girl.png);
     height: 500px;
-    background-repeat: no-repeat;width: 500px;
+    background-repeat: no-repeat;
+    width: 500px;
     background-size: contain;
 }
 
 .card2Flexer{
     display: flex;
     justify-content: center;
-    gap: 0 20px;
+    gap: 0 40px;
 }
 
 .cardItself{
@@ -350,6 +351,14 @@ a{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+.iconic i{
+    transition: .3s;
+    cursor: pointer;
+}
+.iconic i:hover{
+    background-color: #26335D;
+    color: #fff;
 }
 .iconic i{
     background-color: #fff;
@@ -393,6 +402,11 @@ a{
     border: 2px solid #8D5CF6;
     padding: 10px 15px;
     border-radius: 40px;
+    transition: .3s;
+}
+.padWrap a:hover{
+    background-color: #8D5CF6;
+    color: white;
 }
 div.money{
     margin: 30px 0;
@@ -407,12 +421,13 @@ div.money :first-child{
 div.money :last-child{
     color: #E74040;
 }
-@media screen and (max-width:1100px) {
+@media screen and  (max-width:1100px)  {
     header{
         align-items: flex-start;
         position: fixed;
+        box-shadow:.5px .5px .5px #fff;
     }
-    a{
+    header a{
         text-decoration: none;
         font-size: 1.5em;
     }
@@ -536,5 +551,79 @@ div.money :last-child{
     }
     .secondPage :nth-child(3){
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:950px){
+
+    iframe{
+        width: 300px;
+    }
+    .cardInfoWrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .affordable span{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .girlImage{
+        margin-bottom: 40px;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+    }
+    .card2Flexer{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .cardItself{
+        width: 500px;
+    }
+    
+    .imageWithIcon img{
+        width: 500px;
+        height: 300px;
+    }
+    .padWrap h3{
+        margin-bottom: 10px;
+    }
+
+    .padWrap :nth-child(3){
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:650px){
+
+    iframe{
+        width: 400px;
+    }
+    .cardItself{
+        width: 300px;
+    }
+    
+    .imageWithIcon img{
+        width: 300px;
+        height: 200px;
+        background-size: contain;
+    }
+    .padWrap h3{
+        margin-bottom: 10px;
+    }
+
+    .padWrap :nth-child(3){
+        margin-top: 10px;
+    }
+    .padWrap a{
+        color: #8D5CF6;
+        border: 2px solid #8D5CF6;
+        padding: 5px 9px;
+        border-radius: 40px;
+        transition: .3s;
+    }
+    div.money{
+        margin: 20px 0;
     }
 }
