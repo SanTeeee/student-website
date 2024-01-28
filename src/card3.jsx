@@ -1,5 +1,4 @@
 import React from "react";
-import Heart from "./icon cool-icon-25.png"
 import Card3Info from "./card3Info";
 
 function Card3(){
