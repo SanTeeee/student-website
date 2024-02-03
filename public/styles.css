@@ -567,6 +567,97 @@ div.money :last-child{
 .anWrap p:last-child{
     font-weight: 700;
 }
+
+.inputHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.inputer{
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.inputer input{
+    width: 500px;
+    padding: 15px 0 15px 20px;
+    outline: none;
+    border-radius: 9px;
+    border: none;
+    transition: .2s;
+    font-family: montserrat;
+}
+
+.inputer input:focus{
+    box-shadow: 0 0 10px .5px #8D5CF6;
+    border: none;
+}
+.inputer button{
+    position: absolute;
+    padding: 15px 10px;
+    background-color: #8D5CF6;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0 9px 9px 0;
+    font-family: montserrat;
+}
+
+.footerCont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 150px;
+    padding: 40px 100px;
+    gap: 70px ;
+    font-size: 14px;
+}
+
+.footerCont i{
+    color: #8D5CF6;
+}
+
+.footerUpFirstColumn i{
+    margin-right: 10px;
+}
+.footerUp{
+    display: flex;
+    justify-content: space-around;
+}
+.footerUp h2{
+    margin-bottom: 20px;
+}
+.footerUpFirstColumn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footerUpFirstColumn a{
+    color: #737373;
+}
+
+.footerDown{
+    display: flex;
+    justify-content: space-between;
+    color: #737373;
+    width: 100%;
+}
+.footerDown p{
+    font-weight: 700;
+}
+
+.footerIcons{
+    display: flex;
+    gap: 20px;
+    font-size: 27px;
+    color: #8D5CF6;
+}
 @media screen and  (max-width:1200px)  {
     header{
         align-items: flex-start;
@@ -721,6 +812,11 @@ div.money :last-child{
         align-items: center;
         row-gap: 90px;
     }
+    .footerCont{
+        padding: 20px 50px;
+        gap: 70px ;
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:950px){
@@ -772,7 +868,32 @@ div.money :last-child{
     .card3InfoWrapper{
         width: 400px;
     }
+    .footerCont{
+        font-size: 15px;
+    }
+    .footerUp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .footerUp h2{
+        margin-bottom: 8px;
+    }
+    .footerUpFirstColumn{
+        align-items: center;
+        row-gap: 5px;
+        margin-bottom: 55px;
+    }
     
+
+
+
+
+
+
+
+
     
 }
 
@@ -833,9 +954,9 @@ div.money :last-child{
     }
 
     .card4Wrapper{
-        width: 80%;
+        width: 450px;
         padding: 20px;
-        padding: 50px 0;
+        padding: 30px 0;
     }
     .card4Flexer{
         display: flex;
@@ -850,5 +971,15 @@ div.money :last-child{
 
 .anWrap p:first-child{
     width: 350px;
+}
+
+.inputer input{
+    width: 350px;
+}
+
+.footerCont{
+    padding: 10px 30px;
+    width: 100%;
+    margin-top: 50px;
 }
 }

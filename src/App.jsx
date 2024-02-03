@@ -6,6 +6,8 @@ import Card2 from "./card2";
 import Watch from "./watch";
 import Card3 from "./card3";
 import Card4 from "./card4";
+import Input from "./input";
+import Footer from "./footer";
 
 function App(){
     return (
@@ -19,6 +21,9 @@ function App(){
                 <Card3></Card3>
                 <Practice></Practice>
                 <Card4></Card4>
+                <Practice></Practice>
+                <Input></Input>
+                <Footer></Footer>
             </div>
         
         )
