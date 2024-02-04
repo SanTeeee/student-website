@@ -8,7 +8,6 @@ html{
 }
 
 body{
-    
     background-color: #26335D;
     font-family: montserrat;
 }
@@ -37,6 +36,7 @@ span.ham{
     height: 4px;
     display: block;
     margin: 5px 0;
+    border-radius: 40px;
 }
 
 .allLinks{
@@ -113,6 +113,7 @@ button{
 .firstContent{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 80px;
 }
 .firstPageDesc{
@@ -679,7 +680,7 @@ div.money :last-child{
         position: absolute;
         left: -100%;
         margin-left: -48px;
-        top: 20%;
+        top: 4%;
     }
 
     .allLinks.active{
@@ -697,7 +698,7 @@ div.money :last-child{
         margin-left: 0;
     }
     nav.active{
-        height: 70vh;
+        height: 100vh;
         transition: .3s;
         margin-bottom: 10vh;
     }
@@ -897,8 +898,10 @@ div.money :last-child{
     
 }
 
-@media screen and (max-width:650px){
-
+@media screen and (max-width:750px){
+    .boyImage{
+        height: 200px;
+    }
     #frame{
         width: 400px;
     }
@@ -974,12 +977,49 @@ div.money :last-child{
 }
 
 .inputer input{
-    width: 350px;
+    width: 30px;
 }
 
 .footerCont{
     padding: 10px 30px;
     width: 100%;
-    margin-top: 50px;
 }
+}
+
+@media screen and (max-width:550px){
+    header{
+        width: 100%;
+    }
+    .boyImage{
+        height: 250px;
+    }
+
+    #frame{
+        width: 400px;
+        height: 300px;
+    }
+
+
+
+    .card4Wrapper{
+        width: 400px;
+        padding: 20px 0;
+    }
+    .card4Flexer{
+        gap: 50px;
+    }
+    .inputer input{
+        width: 350px;
+    }
+    .inputer button{
+        width: auto;
+    }
+
+    .footerCont{
+        padding:0;
+        gap: 20px ;
+    }
+    .footerDown{
+        padding: 10px 20px;
+    }
 }
