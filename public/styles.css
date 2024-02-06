@@ -129,7 +129,7 @@ button{
     background-color: #fff;
 }
 
-.formFlex{
+.formFlex, .formForSignUP{
     color: #fff;
     font-family: montserrat;
     font-size: 19px;
@@ -138,15 +138,7 @@ button{
     opacity: 0;
     transition: .5s;
 }
-.formForSignUP{
-    color: #fff;
-    font-family: montserrat;
-    font-size: 19px;
-    position: absolute;
-    right: -100%;
-    opacity: 0;
-    transition: .5s;
-}
+
 .formContainer form input, .signContainer form input{
     padding: 15px 10px;
 }
@@ -181,7 +173,7 @@ span.x{
     transition: .3s;
 }
 
-.formFlex.active{
+.formFlex.active, .formForSignUP.active{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -195,20 +187,7 @@ span.x{
     opacity: 1;
     transition:.5s ;
 }
-.formForSignUP.active{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 2000000;
-    top: 40px;
-    right: 0;
-    opacity: 1;
-    transition:.5s ;
-}
+
 .formContainer a, .signContainer a{
     color: #4cffc6;
 }
