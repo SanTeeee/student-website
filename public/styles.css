@@ -25,6 +25,24 @@ header{
     background-color: #26335D;
     z-index: 1;
 }
+header.inactive{
+    opacity: .3;
+}
+header.active{
+    opacity: 1;
+}
+body.inactive{
+    overflow: hidden;
+}
+.firstContent.inactive{
+    opacity: .2;
+}
+.firstContent.active{
+    opacity: 1;
+}
+body.active{
+    overflow: scroll;
+}
 
 nav{
     display: none;
@@ -109,6 +127,145 @@ button{
 .loginLinks a button:hover{
     color: #26335D;
     background-color: #fff;
+}
+
+.formFlex{
+    color: #fff;
+    font-family: montserrat;
+    font-size: 19px;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: .5s;
+}
+.formForSignUP{
+    color: #fff;
+    font-family: montserrat;
+    font-size: 19px;
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    transition: .5s;
+}
+.formContainer form input, .signContainer form input{
+    padding: 15px 10px;
+}
+.cancel, .canceller{
+    width: 50px;
+    height: 50px;
+    background-color: #4e62a3;
+    border-radius: 0 8px 0 30%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+span.x{
+    height: 4px;
+    width:27px;
+    background-color: #fff;
+    display: block;
+    margin: 3px 0;
+    border-radius: 40px;
+}
+ span.x:nth-child(1){
+    transform:translateY(5px) rotate(45deg) ;
+    transition: .3s;
+}
+ span.x:nth-child(2){
+    transform: translateY(-5px)rotate(-45deg) ;
+    transition: .3s;
+}
+
+.formFlex.active{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2000000;
+    top: 40px;
+    left: 0;
+    opacity: 1;
+    transition:.5s ;
+}
+.formForSignUP.active{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2000000;
+    top: 40px;
+    right: 0;
+    opacity: 1;
+    transition:.5s ;
+}
+.formContainer a, .signContainer a{
+    color: #4cffc6;
+}
+.formContainer, .signContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    backdrop-filter:blur(100px);
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom left,#26335D ,#4e62a3) ;
+}
+.formContainer form input, .signContainer form input{
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    font-family: montserrat;
+}
+.details{
+    text-align: center;
+    margin-bottom: 15px;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+}
+form span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#login button, .formContainer form input .signContainer form input{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 3px;
+}
+#login button{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reenter, #repassword{
+    display: none;
+}
+.reenter.active, #repassword.active{
+    display: block;
 }
 .firstContent{
     display: flex;
