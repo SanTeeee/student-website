@@ -307,9 +307,6 @@ form span{
     position: relative;
 }
 
-.firstPageDesc span a:nth-child(2) button:hover::before{
-   
-}
 
 .boyImage{
     background-image:url(./assets/boy.png) ;
@@ -863,10 +860,6 @@ div.money :last-child{
         flex-direction: column;
         align-items: center;
     }
-    .loginLinks a{
-        
-    }
-    
     .navLinks a::before{
         height: 0;
     }
