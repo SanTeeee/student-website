@@ -10,6 +10,7 @@ html{
 body{
     background-color: #26335D;
     font-family: montserrat;
+    width: 100vw;
 }
 
 header{
@@ -26,7 +27,7 @@ header{
     z-index: 1;
 }
 header.inactive{
-    opacity: .3;
+    opacity: .1;
 }
 header.active{
     opacity: 1;
@@ -134,9 +135,10 @@ button{
     font-family: montserrat;
     font-size: 19px;
     position: absolute;
-    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    transition: .5s;
 }
 
 .formContainer form input, .signContainer form input{
@@ -174,17 +176,12 @@ span.x{
 }
 
 .formFlex.active, .formForSignUP.active{
-    display: flex;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     z-index: 2000000;
-    top: 40px;
-    left: 0;
     opacity: 1;
+    top: 40px;
     transition:.5s ;
 }
 
@@ -249,6 +246,7 @@ form span{
 .firstContent{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     align-items: center;
     margin-top: 80px;
 }
@@ -324,6 +322,7 @@ form span{
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    width: 100%;
 }
 
 #frame{
@@ -710,10 +709,10 @@ div.money :last-child{
 
 }
 .inputer{
-    position: relative;
     align-items: center;
     justify-content: flex-end;
     display: flex;
+    width: inherit;
 }
 .inputer input{
     width: 500px;
@@ -730,13 +729,13 @@ div.money :last-child{
     border: none;
 }
 .inputer button{
-    position: absolute;
     padding: 15px 10px;
     background-color: #8D5CF6;
     color: #fff;
     border: none;
     outline: none;
-    border-radius: 0 9px 9px 0;
+    width: 500px;
+    border-radius:9px;
     font-family: montserrat;
 }
 
@@ -796,8 +795,9 @@ div.money :last-child{
     header{
         align-items: flex-start;
         position: fixed;
-        box-shadow:.5px .5px .5px #fff;
+        box-shadow:.5px .5px .5px #8D5CF6;
         padding: 30px 40px;
+        width: 100%;
     }
     header a{
         text-decoration: none;
@@ -867,10 +867,33 @@ div.money :last-child{
         transform: scale(.9);
     }
     .firstContent{
-        margin: 100px 30px 0 30px;
+        margin: 100px 0;
         flex-direction: column-reverse;
         align-items: center;
     }
+    .firstPageDesc p:first-child{
+        color: #8D5CF6;
+        text-transform: capitalize;
+        font-size: 1.5em;
+        margin-bottom: 35px;
+    }
+    .firstPageDesc h1{
+        width: 100%;
+    }
+    .firstPageDesc :nth-child(3){
+        color: #fff;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    .firstPageDesc span a{
+        margin: 10px 0 ;
+    }
+    
+    .firstPageDesc span a:first-child{
+        margin-right: 10px;
+    }
+ 
     .boyImage{
         width: 60%;
         height: 50vh;
@@ -879,6 +902,7 @@ div.money :last-child{
     .firstPageDesc{
         margin-top: 80px;
     align-items: center;
+    width: 100%;
     }
     .firstPageDesc :nth-child(2){
         font-size: 1.5em;
@@ -909,7 +933,12 @@ div.money :last-child{
         border: 1px solid #8D5CF6;
     }
     .secondPage{
-        margin: 50px 70px;
+        padding: 50px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .secondPage iframe{
         width: 500px;
@@ -924,6 +953,7 @@ div.money :last-child{
         width: 800px;
         height: 400px;
     }
+    
     .card3Flexer{
         flex-direction: column;
         align-items: center;
@@ -1016,20 +1046,21 @@ div.money :last-child{
         margin-bottom: 55px;
     }
     
-
-
-
-
-
-
-
-
-    
 }
 
 @media screen and (max-width:750px){
     .boyImage{
         height: 200px;
+    }
+    .firstPageDesc{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+    .firstPageDesc h1{
+        width: auto;
     }
     #frame{
         width: 400px;
@@ -1106,7 +1137,7 @@ div.money :last-child{
 }
 
 .inputer input{
-    width: 30px;
+    width: 500px;
 }
 
 .footerCont{
@@ -1115,7 +1146,7 @@ div.money :last-child{
 }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:600px){
     header{
         width: 100%;
     }
@@ -1127,7 +1158,7 @@ div.money :last-child{
         width: 400px;
         height: 300px;
     }
-
+    
 
 
     .card4Wrapper{
@@ -1138,10 +1169,10 @@ div.money :last-child{
         gap: 50px;
     }
     .inputer input{
-        width: 350px;
+        width: 80%;
     }
     .inputer button{
-        width: auto;
+        width: 80%;
     }
 
     .footerCont{
@@ -1150,5 +1181,182 @@ div.money :last-child{
     }
     .footerDown{
         padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+    .firstContent{
+    justify-content: center;
+    width: 500px;
+    }
+    .firstPageDesc{
+        width: 500px;
+        margin: 0;
+    }
+
+    
+    .boyImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        width: 200px;
+    }
+    
+    /* Second page starts here */
+    
+    .secondPage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 500px;
+    }
+    
+    #frame{
+        width: 400px;
+        height: 200px;
+    }
+    
+    .secondPage p:first-child, .secondPage h1{
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    
+    .secondPage p:first-child{
+        color: #8D5CF6;
+    }
+    
+    .secondPage :nth-child(3), .secondPage h1{
+        color: #fff;
+    
+    }
+    
+    .secondPage :nth-child(3){
+        margin-bottom: 100px;
+    }
+    .textB4Card{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .textB4Card h4{
+        color: #8D5CF6;
+    }
+
+    .cardInfoWrapper{
+        width: 500px;
+        gap: 30px;
+    }
+
+    .affordable{
+        margin: 150px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    .affordable span{
+        margin: 0 40px;
+    }
+    .affordable span div h1,
+    .affordable span div p{
+        margin-bottom: 40px;
+    }
+    .affordable span div h1{
+        font-size: 1.8em;
+    }
+
+    .girlImage{
+        height: 200px;
+        width: 300px;
+        background-size: cover;
+
+    }
+    
+    .card2Flexer{
+        width: 500px;
+    }
+    
+    .cardItself{
+        width: 300px;
+    }
+    
+    .imageWithIcon img{
+        width: 300px;
+        height: 200px;
+        background-size: contain;
+    }
+
+    .card3Flexer{
+        width: 500px;
+    }
+    .card3Flexer :nth-child(1) .abs,
+    .card3Flexer :nth-child(3) .abs{
+        display: none;
+    }
+    
+    .abs{
+        position: absolute;
+        background-color: #E77C40;
+        padding: 40px;
+        font-size: 18px;
+    }
+    
+    .card3InfoWrapper{
+        width: 300px;
+        padding: 20px;
+    }
+    .loveBackgroundWrapper{
+        height: 70px;
+        width: 70px;
+    }
+    .loveBackgroundWrapper i{
+        font-size: 18px;
+    }
+
+    .checkList{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .checkList span i{
+        font-size: 20px;
+    }
+    .card4Wrapper{
+        width: 350px;
+        padding:  20px ;
+    }
+    .anWrap p:first-child{
+        width: 250px;
+    }
+    .card4Flexer{
+        width: 500px;
+    }
+    .card4Wrapper img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .inputHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    
+    }
+    .inputer input{
+        width: 300px;
+    }
+    
+    .inputer button{
+        width: 300px;
+    }
+    
+    .footerCont{
+        width: 500px;
+        padding: 30px 0;
     }
 }
