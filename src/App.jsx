@@ -11,7 +11,7 @@ import Footer from "./footer";
 
 function App(){
     return (
-            <div>
+            <div className="APPP">
                 <Practice></Practice>
                 <Card></Card>
                 <Affordable></Affordable>
